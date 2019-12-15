@@ -9,7 +9,7 @@ RUN ln -sf /usr/share/zoneinfo/${TIMEZONE} /etc/localtime \
 
 RUN mkdir /data
 WORKDIR /data
-COPY server .
-RUN chmod +x server
+COPY main .
+RUN chmod +x main
 EXPOSE 80
-ENTRYPOINT ["./server"]
+ENTRYPOINT ["./main"]
