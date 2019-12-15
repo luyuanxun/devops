@@ -1,0 +1,8 @@
+version: '2.0'
+services:
+  go:
+    build: ./
+    container_name: gin
+    restart: always
+    ports:
+      - "8888:80"
